@@ -40,7 +40,7 @@ const BodyCase = () => {
                                     <Typography sx={{ fontSize: 14, color: "white", padding: "10px" }}
                                         display="flex" justifyContent="start" alignItems="center"
                                         color="text.secondary">
-                                        <span style={{ fontSize: "20px", marginRight: "5px", color: "#2DC4EA", fontSize: "22px" }}>0{da?.id}</span>{da?.title}
+                                        <span style={{ fontSize: "20px", marginRight: "5px", color: "#2DC4EA" }}>0{da?.id}</span>{da?.title}
                                     </Typography>
                                 </CardContent>
                             </Card>
