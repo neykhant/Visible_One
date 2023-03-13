@@ -1,10 +1,9 @@
-import { Button, Card, CardContent, Grid, Typography } from '@mui/material'
-import { Box } from '@mui/system'
+import {  Card, CardContent, Grid, Typography } from '@mui/material'
+// import { Box } from '@mui/system'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import bodycase from '../../images/case-style.png'
-import Style from '../Header/Style.module.css'
-
+// import Style from '../Header/Style.module.css'
 
 const BodyCase = () => {
     const [apiData, setApiData] = useState([])
@@ -36,9 +35,9 @@ const BodyCase = () => {
                 {
                     apiData?.map((da) => {
                         return (
-                            <Card key={da?.id} sx={{ width: "100%", height: "40px", marginTop: "5px", backgroundColor: "#35a192" }} >
+                            <Card key={da?.id} sx={{ width: "100%", height: "50px", marginTop: "5px", backgroundColor: "#35a192" }} >
                                 <CardContent sx={{ padding: "0px !important" }}>
-                                    <Typography sx={{ fontSize: 14, color: "white", padding: "7px" }}
+                                    <Typography sx={{ fontSize: 14, color: "white", padding: "10px" }}
                                         display="flex" justifyContent="start" alignItems="center"
                                         color="text.secondary">
                                         <span style={{ fontSize: "20px", marginRight: "5px", color: "#2DC4EA", fontSize: "22px" }}>0{da?.id}</span>{da?.title}
@@ -51,37 +50,6 @@ const BodyCase = () => {
 
             </Grid>
         </Grid>
-
-        // <div>
-        //     <Box display="flex" justifyContent="space-evenly" alignItems="center">
-        //         <Box>
-        //             <img style={{ width: "400px" }} src={bodycase} alt="bodycase" />
-        //         </Box>
-        //         <Box>
-        //             <Typography variant="h6" component="h6" m={1}
-        //                 textAlign="left"
-        //             >
-        //                 <span>OUR</span> <span style={{ color: "#2DC4EA", margin: "3px" }}>CHALLENGES</span>
-        //             </Typography>
-        //             {
-        //                 apiData?.map((da) => {
-        //                     return (
-        //                         <Card key={da?.id} sx={{ minWidth: 500, height: "40px", margin: "2px", backgroundColor: "#35a192" }} >
-        //                             <CardContent sx={{ padding: "0px !important" }}>
-        //                                 <Typography sx={{ fontSize: 14, color: "white", padding: "7px" }}
-        //                                     display="flex" justifyContent="start" alignItems="center"
-        //                                     color="text.secondary">
-        //                                     <span style={{ fontSize: "20px", marginRight: "5px", color: "#2DC4EA", fontSize: "22px" }}>0{da?.id}</span>{da?.title}
-        //                                 </Typography>
-        //                             </CardContent>
-        //                         </Card>
-        //                     )
-        //                 })
-        //             }
-        //         </Box>
-        //     </Box>
-        //     <Button className={Style.bodycaseviewmore}>View More</Button>
-        // </div >
     )
 }
 

@@ -1,11 +1,11 @@
-import { Box, rgbToHex, Stack, Typography } from '@mui/material'
+import { Box,Stack, Typography } from '@mui/material'
 import React from 'react'
 // import image from '../../images/HBody.png'
 import wp from '../../images/wpb.svg'
 import resp from '../../images/resp.svg'
 import shop from '../../images/shop.svg'
-import laptop from '../../images/laptop.png'
-import navbody from '../../images/navbody.png'
+// import laptop from '../../images/laptop.png'
+// import navbody from '../../images/navbody.png'
 import Style from './Style.module.css'
 import { styled } from '@mui/material/styles';
 

@@ -1,6 +1,6 @@
 import { Box, Button, Grid, Typography } from '@mui/material'
 import React from 'react'
-import tablet from '../../images/Tablet.png'
+// import tablet from '../../images/Tablet.png'
 import Style from './Style.module.css'
 
 

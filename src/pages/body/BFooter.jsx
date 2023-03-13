@@ -1,8 +1,8 @@
-import { Box, Button } from '@mui/material'
+import { Box } from '@mui/material'
 import React, { useState } from 'react'
 import mobile from "../../images/mobile.png"
 import desktop from "../../images/desktop.png"
-import smartphone from "../../images/smartphon.png"
+// import smartphone from "../../images/smartphon.png"
 
 const BFooter = () => {
     const [mob, setMobile] = useState(false)
