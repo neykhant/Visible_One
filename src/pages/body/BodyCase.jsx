@@ -1,9 +1,30 @@
-import {  Card, CardContent, Grid, Typography } from '@mui/material'
+import { Box, Card, CardContent, Grid, Typography } from '@mui/material'
 // import { Box } from '@mui/system'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import bodycase from '../../images/case-style.png'
 // import Style from '../Header/Style.module.css'
+import { styled } from '@mui/material/styles';
+
+
+const Root = styled(Box)(({ theme }) => ({
+    position: "relative",
+    marginTop: "40px",
+    width: "60%",
+    [theme.breakpoints.down('lg')]: {
+        marginTop: "50px",
+        width: "60%",
+    },
+    [theme.breakpoints.down('md')]: {
+        marginTop: "40px",
+        width: "60%",
+    },
+    [theme.breakpoints.down('sm')]: {
+        marginTop: "40px",
+        width: "60%",
+    },
+}));
+
 
 const BodyCase = () => {
     const [apiData, setApiData] = useState([])
@@ -23,8 +44,10 @@ const BodyCase = () => {
 
     return (
         <Grid container spacing={1}>
-            <Grid item xs={12} sm={6} md={6} lg={6}>
-                <img style={{ width: "50%" }} src={bodycase} alt="bodycase" />
+            <Grid item xs={12} sm={6} md={6} lg={6} display="flex" justifyContent="center" alignItems="center">
+                <Root >
+                        <img style={{ width: "100%", position: 'relative' }} src={bodycase} alt="bodycase" />
+                </Root>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={6}>
                 <Typography variant="h6" component="h6" m={1}
